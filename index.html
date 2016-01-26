@@ -11,6 +11,8 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="./bootstrap-social-gh-pages/bootstrap-social.css" rel="stylesheet">
+    <link href="./bootstrap-social-gh-pages/assets/css/font-awesome.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -20,7 +22,7 @@
   </head>
   <body>
 
-    <div class ="navbar navbar-inverse navbar-static-top">
+    <div class ="navbar navbar-inverse navbar-fixed-top">
         <div class = "container">
             <div class ="navbar-brand">Adam's Website</div>
             <button class ="navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
@@ -46,13 +48,35 @@
 
     </div>
 
+    <div id ="home" class="jumbotron">
+      <div class="container">
+        <h1>Adam Lawrence's </h1>
+        <h1>Home Page</h1>
+        <h3>Scroll down for more</h3>
+        </div>
+    </div>
+
     <div id ="about" class="jumbotron">
       <div class="container">
-        <h1>About Me</h1>
+        <h1>Personal Info</h1>
         <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;My name is Adam and I am an undergraduate student at Georgia Tech. My major is computer engineering with a focus on software development. This is my fourth year here at Tech, and I have one more left because I did a co-op.
-
+            &nbsp;&nbsp;&nbsp;&nbsp;My name is Adam and I am an undergraduate student at Georgia Tech. My major is computer engineering with a focus on software development. I am currently in my fourth year at Tech, and I have one more left because I did a co-op. Below are some photos I took around campus.
+        </p>
+        <p>
+        <img class="img-responsive img-rounded" src="vanLeer.jpg" alt="Van Leer">
+        </p>
+        <p>
+        <img class="img-responsive img-rounded" src="rainyEvening.jpg" alt="Georgia Tech on a rainy night">
+        </p>
+        <p>
+        <img class="img-responsive img-rounded" src="culc.jpg" alt="The CULC">
+        </p>
+        
+        <p>
             In my free time, I enjoy working at WREK radio as an operator, trainer, and as the news director!
+        </p>
+        <p>
+        <img class="img-responsive img-rounded" src="WREKMeetAndGreet.jpg" alt="WREK Radio">
         </p>
         
       </div>
@@ -60,18 +84,28 @@
 
     <div id ="profession" class="jumbotron">
       <div class="container">
-        <h1>Professional Information</h1>
+        <h1>Professional Info</h1>
         <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;I co-oped for GTRI's Electronic Systems lab where I created, edited, and upgraded several applications. If you want to learn more about what I did as well as the rest of my professional background, you can send me an e-mail!</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+           I co-oped for Georgia Tech Research Institute's Electronic Systems lab Test Applications Branch where I created, edited, and upgraded several applications. If you want to learn more about what I did as well as the rest of my professional background, you can send me an e-mail!</p>
+        <p><a class="btn btn-primary" href="mailto:adam.lawrence@gatech.edu" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
 
     <div id ="contact" class="jumbotron">
       <div class="container">
-        <h1>Contact Information</h1>
-        <p><h3>Email me</h3><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></p>
-        <p><h3>My github page</h3><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span></p>
+        <ul class="list-group-rounded">
+        <h1>Contact Info</h1>
+       
+        <li class="list-group-item link-item">
+            <a href="http://github.com/adamclawrence" target="_blank">
+                <i class="fa fa-github">
+                </i> My Github Profile </a></li>
+        <li class="list-group-item link-item">
+            <a href="mailto:adam.lawrence@gatech.edu" >
+            <span class="glyphicon glyphicon-envelope">                
+            </span> Email Me </a></li>
+
+   </p>
 
       </div>
     </div>

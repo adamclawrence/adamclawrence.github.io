@@ -1,4 +1,41 @@
 html,
+
 body{
     background-color: #99ccff;
+    color: #0d0d0d;
+    text-align: center;
+
+}
+.jumbotron {
+    background-color: #99ccff;
+    height: auto;
+    margin-bottom: 0;
+}
+.jumbotron#home {
+    background-color: #595959;
+    color: #ffffff;
+    padding-top:20%;
+     padding-bottom: 40%;
+}
+.jumbotron#profession {
+    background-color: #ffffff;
+}
+.jumbotron#contact {
+    background-color: #e6ac00;
+}
+.btn {
+    background-color: #99ccff;
+}
+.list-group {
+    background-color: #e6ac00;
+}
+.list-group-item{
+    font-size: 250%;
+   
+}
+.list-item{
+    font-size: 250%;
+}
+.jumbotron a:link{
+    color: #000000;    
 }
