@@ -6,6 +6,14 @@ body{
     text-align: center;
 
 }
+/*.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+}*/
 .jumbotron {
     background-color: #99ccff;
     height: auto;
@@ -34,6 +42,7 @@ body{
    
 }
 .list-item{
+    text-align:center;
     font-size: 250%;
 }
 .jumbotron a:link{
