@@ -4,112 +4,156 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Adam Lawrence's Home Page</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="./bootstrap-social-gh-pages/bootstrap-social.css" rel="stylesheet">
-    <link href="./bootstrap-social-gh-pages/assets/css/font-awesome.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
 
-    <div class ="navbar navbar-inverse navbar-fixed-top ">
-        <div class = "container">
-            <!-- <div class ="navbar-brand">Adam's Website</div> -->
-            <button class ="navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
-            Menu
-            </button>
-            <div class ="collapse navbar-collapse navHeaderCollapse">
-                <ul class = "nav navbar-nav navbar-left">
+</head>
+<body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+<div class="row">
+ <div class="col s12">
+   <ul class="tabs">
+     <li class="tab col s4"><a class="active" href="#personal">Personal Info</a></li>
+     <li class="tab col s4"><a href="#professional">Professional Info</a></li>
+     <li class="tab col s4"><a href="#links">Contact Info</a></li>
+   </ul>
+ </div>
+</div>
 
-                <li><a href ="#home">Home</a></li>
-                <li><a href ="#personal">Personal Info</a></li>
-                <li><a href ="#profession">Professional Info</a></li>
-                <li><a href ="#contact">Contact Info</a></li>
+<div id="personal">
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card large yellow darken-3 hoverable">
+        <div class="card-image">
+          <img class="responsive-img activator" src="RainyEvening.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Georgia Institute of Technology<i class="material-icons right">more_vert</i></span>
+          <p>My name is Adam Lawrence and I'm a fifth year Computer Engineering student at Georgia Tech.</p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">More Info<i class="material-icons right">close</i></span>
+          <p>In my past four years at Tech, I have completed a variety of coursework. Some of my favorites were
+            Computer Graphics, Digital Design Lab, Physical Foundations of Computer Engineering, and
+            Mathematical Foundations of Computer Engineering. I'm looking forward ot taking Introduction
+            to User Interface Design and Video Game Design in the fall!</p>
+        </div>
+      </div>
+    </div>
 
-
-                </ul>
-            </div>
+    <div class="col s12 m6">
+      <div class="card large hoverable">
+        <div class="card-image">
+          <img class="activator" src="wrek_0.png">
 
         </div>
-
-    </div>
-
-    <div id ="home" class="jumbotron">
-      <div class="container">
-        <h1>Adam Lawrence's </h1>
-        <h1>Home Page</h1>
-        <h3>Scroll down for more</h3>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">WREK Radio 91.1 FM<i class="material-icons right">more_vert</i></span>
+            <p> I'm the general manager of Georgia Tech's Radio station that proudly broadcasts
+                at 100kw.
+            </p>
         </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">WREK Radio Involvement<i class="material-icons right">close</i></span>
+          <p> I started at WREK in the Fall of 2012 and have fallen in love with it over the past
+              four years. Each year I got more involved in one way or another. My first step was joining the news team,
+              then becoming the news director, helping out with LiveSound events (as a DJ), training new operators, becoming
+              a music director and most recently becoming the general manager.
+          </p>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
 
-    <div id ="personal" class="jumbotron">
-      <div class="container">
-        <h1>Personal Info</h1>
-        <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;My name is Adam and I am an undergraduate student at Georgia Tech. My major is computer engineering with a focus on software development. I am currently in my fourth year at Tech, and I have one more left! Below are some photos I took around campus.
-        </p>
-        <p>
-        <img class="img-responsive img-rounded" src="vanLeer.jpg" alt="Van Leer">
-        </p>
-        <p>
-        <img class="img-responsive img-rounded" src="rainyEvening.jpg" alt="Georgia Tech on a rainy night">
-        </p>
-        <p>
-        <img class="img-responsive img-rounded" src="culc.jpg" alt="The CULC">
-        </p>
-        
-        <p>
-            In my free time, I enjoy working at WREK radio as an operator, trainer, music director and as the news director!
-        </p>
-        <p>
-        <img class="img-responsive img-rounded" src="WREKMeetAndGreet.jpg" alt="WREK Radio">
-        </p>
-        
+<div id ="professional">
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card large blue darken-3 hoverable">
+        <div class="card-image">
+          <img class="responsive-img activator" src="ford.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-lighten-5">Ford Motor Company<i class="material-icons right">more_vert</i></span>
+          <p class="grey-text text-lighten-5">I also completed an internship at Ford Motor Company where I was a Java
+            and C#/Asp.NET developer on the
+            Global In-Vehicle Information Systems.</p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Intern Info<i class="material-icons right">close</i></span>
+          <p>My main
+            project for the summer was visually and functionally overhauling a diagnostic tool
+            for Azure Logging. In addition
+            to that, I wrote cmdlet scripts in order to automate the retrieval
+            and archival of the logs.</p>
+        </div>
       </div>
     </div>
 
-    <div id ="profession" class="jumbotron">
-      <div class="container">
-        <h1>Professional Info</h1>
-        <p>
-           I co-oped for Georgia Tech Research Institute's Electronic Systems lab Test Applications Branch where I created, edited, and upgraded several applications. If you want to learn more about what I did as well as the rest of my professional background, you can send me an e-mail!</p>
-        <p><a class="btn btn-primary" href="mailto:adam.lawrence@gatech.edu" role="button">Learn more &raquo;</a></p>
+    <div class="col s12 m6">
+      <div class="card large yellow darken-3 hoverable">
+        <div class="card-image">
+          <img class="activator" src="gtri.png">
+
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Georgia Tech Research Institute<i class="material-icons right">more_vert</i></span>
+          <p>I co-oped for Georgia Tech Research Institute's Electronic Systems lab Test Applications Branch
+            as a C# developer.
+          </p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">More Info<i class="material-icons right">close</i></span>
+          <p>
+            I created, edited, and upgraded several applications throughout my three semesters of work. One of the applications I worked on was the creation
+            of a system testing tool that sent simulated messages in order to test the functionality of the core product
+            my branch worked on.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id ="links">
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card red hoverable">
+        <div class="card-content center-align">
+          <span class="card-title activator grey-text text-lighten-5 center-align">Contact Me</span>
+        </div>
+        <div class="card-action center-align">
+          <a href="mailto:adam.lawrence@gatech.edu">
+            <i class="center-align material-icons">email</i>
+          </a>
+        </div>
       </div>
     </div>
 
-    <div id ="contact" class="jumbotron">
-      <div class="container">
-        <ul class="list-group-rounded">
-        <h1>Contact Info</h1>
-       
-        <li class="list-group-item link-item">
-            <a href="http://github.com/adamclawrence" target="_blank">
-                <i class="fa fa-github">
-                </i> My Github Profile </a></li>
-        <li class="list-group-item link-item">
-            <a href="mailto:adam.lawrence@gatech.edu" >
-            <span class="glyphicon glyphicon-envelope">                
-            </span> Email Me </a></li>
-
-   </p>
-
+    <div class="col s12 m6">
+      <div class="card purple lighten-1 hoverable">
+        <div class="card-content center-align">
+          <span class="card-title activator grey-text text-lighten-5 center-align">Github</span>
+        </div>
+        <div class="card-action center-align">
+          <a href="https://github.com/adamclawrence"><i class="material-icons center-align">work</i></a>
+        </div>
       </div>
     </div>
-    
+  </div>
+</div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
   </body>
 </html>
