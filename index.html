@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen,projection"/>
+   <!-- Google Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+    <!-- Tachyons -->
+    <link rel="stylesheet" href="tachyons/css/tachyons.css">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -20,139 +21,183 @@
 <body>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-<div class="row">
- <div class="col s12">
-   <ul class="tabs">
-     <li class="tab col s4"><a class="active" href="#personal">Personal Info</a></li>
-     <li class="tab col s4"><a href="#professional">Professional Info</a></li>
-     <li class="tab col s4"><a href="#links">Contact Info</a></li>
-   </ul>
- </div>
-</div>
 
-<div id="personal">
-  <div class="row">
-    <div class="col s12 m6">
-      <div class="card large yellow darken-3 hoverable">
-        <div class="card-image">
-          <img class="responsive-img activator" src="rainyEvening.jpg">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Georgia Institute of Technology<i class="material-icons right">more_vert</i></span>
-          <p>My name is Adam Lawrence and I graduated with a BS in Computer Engineering from Georgia Tech in 2017.</p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">More Info<i class="material-icons right">close</i></span>
-          <p>During my time at Tech, I have completed a variety of coursework. Some of my favorites were
-            Computer Graphics, Video Game Design, Digital Design Lab, Physical Foundations of Computer Engineering, and
-            Mathematical Foundations of Computer Engineering. </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col s12 m6">
-      <div class="card large hoverable">
-        <div class="card-image">
-          <img class="activator" src="wrek_0.png">
-
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">WREK Radio 91.1 FM<i class="material-icons right">more_vert</i></span>
-            <p> I was the general manager of Georgia Tech's Radio station that proudly broadcasts
-                at 100kw.
-            </p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">WREK Radio Involvement<i class="material-icons right">close</i></span>
-          <p> I started at WREK in the Fall of 2012 and have fallen in love with it over the past
-              four years. Each year I got more involved in one way or another. My first step was joining the news team,
-              then I became the news director, helped out with LiveSound events (as a DJ), trained new operators, became
-              a music director and finally became the general manager.
-          </p>
-        </div>
-      </div>
-    </div>
+<!--splash screen -->
+<article class="vh-100 dt w-100 bg-light-blue">
+  <div class="dtc v-mid tc white ph3 ph4-l">
+    <h1 class="helvetica f6 f2-m f-subheadline-l fw6 db">Hi! I'm Adam.</h1>
   </div>
-</div>
+</article>
 
-<div id ="professional">
-  <div class="row">
-    <div class="col s12 m6">
-      <div class="card large blue darken-3 hoverable">
-        <div class="card-image">
-          <img class="responsive-img activator" src="ford.jpg">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-lighten-5">Ford Motor Company<i class="material-icons right">more_vert</i></span>
-          <p class="grey-text text-lighten-5">I completed an internship at Ford Motor Company where I was a Java
-            and C#/Asp.NET developer on the
-            Global In-Vehicle Information Systems team.</p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Intern Info<i class="material-icons right">close</i></span>
-          <p>My main
+<!--GM-->
+<article class="helvetica cf ph3 ph5-ns pv5 bg-moon-gray">
+  <header class=" fn fl-ns w-50-ns pr4-ns">
+    <h1 class="f2 lh-title fw9 mb3 mt0 pt3 bt bw2">
+      General Motors
+    </h1>
+    <h2 class="f3 mid-gray lh-title">
+      Software Developer
+    </h2>
+    <time class="f6 ttu tracked gray">June 2017 - present</time>
+  </header>
+  <div class="fn fl-ns w-50-ns">
+    <p class="f5 lh-copy measure mt0-ns">
+      I work for the global end user experience team where I develop internal tools and websites. Using Angular and C#, I developed features for an internal conference solution and other related projects. For internal site development, I primarily use vanilla javascript for feature implementations.
+    </p>
+  </div>
+</article>
+<!--GT MS-->
+<article class="helvetica cf ph3 ph5-ns pv5 bg-moon-gray">
+  <div class="fn fl-ns w-50-ns">
+    <p class="f5 lh-copy measure mt0-ns">
+      I will be studying Computer Science in more depth starting in Spring 2018.
+    </p>
+  </div>
+
+    <header class="fn fl-ns w-50-ns pr4-ns">
+    <h1 class="f2 lh-title fw9 mb3 mt0 pt3 bt bw2">
+      Georgia Institute of Technology
+    </h1>
+    <h2 class="f3 mid-gray lh-title">
+      MS Computer Science
+    </h2>
+    <time class="f6 ttu tracked gray">January 2018 - ?</time>
+  </header>
+</article>
+
+<!--GT BS-->
+<article class="helvetica cf ph3 ph5-ns pv5 bg-moon-gray">
+   <header class="fn fl-ns w-50-ns pr4-ns">
+    <h1 class="f2 lh-title fw9 mb3 mt0 pt3 bt bw2">
+      Georgia Institute of Technology
+    </h1>
+    <h2 class="f3 mid-gray lh-title">
+      BS Computer Engineering
+    </h2>
+    <time class="f6 ttu tracked gray">August 2012 - May 2017</time>
+  </header>
+
+  <div class="fn fl-ns w-50-ns">
+    <p class="f5 lh-copy measure mt0-ns">
+      I completed a variety of Computer Engineering coursework including embedded systems programming, physical foundations of computer engineering, basic circuit design,
+      computer architecture, and advanced operating systems.
+    </p>
+    <p class="f5 lh-copy measure mt0-ns">
+      As a Computer Engineering major, I had flexibility in my elective courses, so I decided to focus on Computer Science coursework. Some of my favorites were computer graphics, data structures & algorithms, software 
+      enginering principles and video game design.
+    </p>
+  </div>
+
+   
+</article>
+
+
+<!--WREK -->
+<article class="helvetica cf ph3 ph5-ns pv5 bg-moon-gray">
+
+<div class="fn fl-ns w-50-ns">
+    <p class="f5 lh-copy measure mt0-ns">
+      I started at WREK in Fall of 2012 when I started at Georgia Tech. After becoming an official operator, my involvement continued to grow! I joined the news team, became a news director, became a Live Sound DJ, became a Music Director, and ended my career at WREK as the General Manager.
+    </p>
+  </div>
+
+  <header class="fn fl-ns w-50-ns pr4-ns">
+    <h1 class="f2 lh-title fw9 mb3 mt0 pt3 bt bw2">
+      WREK Radio
+    </h1>
+    <h2 class="f3 mid-gray lh-title">
+      Operator to General Manager
+    </h2>
+    <time class="f6 ttu tracked gray">August 2012 - May 2017</time>
+  </header>
+  
+</article>
+
+<!--Ford -->
+<article class="helvetica cf ph3 ph5-ns pv5 bg-moon-gray">
+  
+    <header class="fn fl-ns w-50-ns pr4-ns">
+    <h1 class="f2 lh-title fw9 mb3 mt0 pt3 bt bw2">
+      Ford Motor Company 
+    </h1>
+    <h2 class="f3 mid-gray lh-title">
+      C# & Asp.NET Developer Intern 
+    </h2>
+    <time class="f6 ttu tracked gray">May 2016 - August 2016</time>
+  </header>
+
+
+  <div class="fn fl-ns w-50-ns">
+    <p class="f5 lh-copy measure mt0-ns">
+         I worked on the Global In-Vehicle Information Systems team.
+         My main
             project for the summer was visually and functionally overhauling a diagnostic tool
             that allowed developers to find issues in the software distribution pipeline. In addition
             to that, I wrote cmdlet scripts in order to automate the retrieval
-            and archival of the logs.</p>
-        </div>
-      </div>
-    </div>
+            and archival of the logs.
+    </p>
+  </div>
 
-    <div class="col s12 m6">
-      <div class="card large yellow darken-3 hoverable">
-        <div class="card-image">
-          <img class="activator" src="gtri.png">
+</article>
+<!--GTRI-->
+<article class="helvetica cf ph3 ph5-ns pv5 bg-moon-gray">
 
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Georgia Tech Research Institute<i class="material-icons right">more_vert</i></span>
-          <p>I co-oped for Georgia Tech Research Institute's Electronic Systems lab Test Applications Branch
-            as a C# developer.
-          </p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">More Info<i class="material-icons right">close</i></span>
-          <p>
-            I created, edited, and upgraded several applications throughout my three semesters of work. One of the applications I worked on was the creation
+
+<div class="fn fl-ns w-50-ns">
+    <p class="f5 lh-copy measure mt0-ns">
+      I worked in the Electronic Systems Lab, Testing Branch where I created, edited, and upgraded several applications throughout my three semesters of work. One of the applications I worked on was the creation
             of a system testing tool that sent simulated messages in order to test the functionality of the core product
-            my branch worked on.</p>
-        </div>
-      </div>
-    </div>
+            my branch worked on.
+    </p>
+   
   </div>
-</div>
 
-<div id ="links">
-  <div class="row">
-    <div class="col s12 m6">
-      <div class="card red hoverable">
-        <div class="card-content center-align">
-          <span class="card-title activator grey-text text-lighten-5 center-align">Contact Me</span>
-        </div>
-        <div class="card-action center-align">
-          <a href="mailto:adam.lawrence@gatech.edu">
-            <i class="center-align material-icons">email</i>
-          </a>
-        </div>
-      </div>
-    </div>
+  <header class="fn fl-ns w-50-ns pr4-ns">
+    <h1 class="f2 lh-title fw9 mb3 mt0 pt3 bt bw2">
+      Georgia Tech Research Institute
+    </h1>
+    <h2 class="f3 mid-gray lh-title">
+      C# Developer Co-op
+    </h2>
+    <time class="f6 ttu tracked gray">January 2014 - July 2015</time>
+  </header>
+  
+</article>
 
-    <div class="col s12 m6">
-      <div class="card purple lighten-1 hoverable">
-        <div class="card-content center-align">
-          <span class="card-title activator grey-text text-lighten-5 center-align">Github</span>
-        </div>
-        <div class="card-action center-align">
-          <a href="https://github.com/adamclawrence"><i class="material-icons center-align">work</i></a>
-        </div>
-      </div>
-    </div>
+<!-- SVG Icons are from https://simpleicons.org -->
+<footer style="background-image:url(http://i.giphy.com/5lF3pQpdquCBy.gif);" class="tc-l bg-center cover bg-near-black">
+  <div class="w-100 ph3 pv5 bg-black-80">
+  
+
+ <a class="helvetica link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2" href="mailto:adam.lawrence@gatech.edu" target="_blank">
+      <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H21V7.387l-9 6.463-9-6.463V21H1.5C.649 21 0 20.35 0 19.5v-15c0-.425.162-.8.431-1.068C.7 3.16 1.076 3 1.5 3H2l10 7.25L22 3h.5c.425 0 .8.162 1.069.432.27.268.431.643.431 1.068z" fill-rule="nonzero"/></svg>
+      <span class="f6 ml3 pr2">Email me </span>
+    </a>
+
+
+
+
+    <a class="helvetica link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2" href="https://github.com/adamclawrence" target="_blank"title="GitHub">
+      <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8"/></svg>
+      <span class="f6 ml3 pr2">GitHub</span>
+    </a>
+
+ 
+
+    <a class="helvetica link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2" href="https://www.linkedin.com/in/adam-lawrence-278a4581/" target="_blank">
+      <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51V7.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero"/></svg>
+      <span class="f6 ml3 pr2">LinkedIn</span>
+    </a>
   </div>
-</div>
+</footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+<footer class="helvetica justify-center-l bg-near-black white-40  pv1-l  pl1">
+    <span class="dib mr6 mr5-ns" fill="currentColor">©2017 Adam Lawrence</span>
+    <span class=" ml7 white-80" fill="currentColor">Created by me with the help of </span>
+    <span class="link white-80 hover-gold" fill="currentColor" href="http://tachyons.io">Tachyons! </span>
+  </p>
+</footer>
+
+
   </body>
 </html>
